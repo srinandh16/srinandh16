@@ -1,0 +1,182 @@
+<head>
+    <h> <b>NETFLIX</b></h>
+
+<style>
+    h{
+        color: red;
+        margin-left: 150px;
+        font-size: xx-large;
+        
+    }
+    head{
+        color:rgb(11, 11, 11);
+    }
+    form{
+        color: white;
+    }
+    body{
+        background-color: hsl(0, 10%, 4%); 
+        align-items: center center;
+        
+        position:absolute;
+        background-size:cover;
+        background-position:50% 50%;
+        background-image: url(file:///Users/srinandhreddygaddam/Downloads/netflix.jpg);
+        
+        
+        
+        
+        
+        
+    }
+   h1{
+       color: white;
+       font-size: small;
+       margin-right: -71px;
+   }
+   h2{
+      color:white;
+      font-size: 75%;
+      margin-right: -71px;
+      
+   }
+   .square{
+    background:transparent;
+    
+    position:absolute;
+    top: 1000%;
+    left: 230%;
+    transform: translate(-50%, -50%); 
+    
+    
+    
+   
+
+
+
+         
+
+   }
+   .username{
+    background:transparent;
+   }
+   .password{
+    background:transparent;
+   }
+    
+  
+   
+    checkbox{
+     color: white;
+     margin-left:300px;
+   }
+   h3{
+    color:white;
+    font-size: 105%;
+      margin-right: -20px;
+    
+   }
+   input{
+          text-align: center;
+          border-radius: 2%;
+          background-color:#5c5a5a;
+          color:white;
+          width: 250px;
+          height:45px;
+          margin-top:10px;
+          margin-left:10px;
+          
+          
+          
+   }
+
+   button{
+        background-color: rgb(173, 7, 7);
+        width:250px;
+        height:30px;
+        margin-right:-61px;
+        margin-top:20px;
+        align-items: center; 
+        
+   }
+   label,
+   input[type="checkbox"]{
+    margin-right:30px;
+    width:20px;
+    height:20px;
+    
+    color:white
+    
+   }
+   .checkbox{
+    border: rgb(147, 16, 38);
+    padding: 0.5ch;
+   }
+   
+</style>
+
+</head>
+<br>
+<body>
+
+
+<form "action" class="square">
+username:
+<input type="text" class="username" placeholder="Enter UserName">
+
+<br>
+password:
+    
+<input type="password" class="password"  placeholder="Enter Password" maxlength"12"> 
+<br>
+      
+    <button type="button" id = "login">
+        sign in
+    </button>
+
+
+    <h1>OR</h1>
+    <button type="button"> 
+       use a sign-in code
+    </button>
+    <h2>forgot password?</h2>
+    <label>
+    <input type="checkbox" class="checkbox"> Remember me </checkbox>
+    </label>
+    <h3>New to Netflix?signup Now.</h3>
+</form>
+
+</div>
+</body>
+<script>
+
+    const  loginButton = document.getElementById("login");
+    loginButton.addEventListener("click", function(){
+        const username = document.querySelector(".username").value;
+        const password = document.querySelector(".password").value;
+        const rememberMe = document.querySelector(".checkbox").checked;
+        
+        if (username  && password ) {
+            // Redirect to home page
+            window.location.href = "mainpage.html"; // Change this to the path of your home page
+        } else {
+            alert("Please enter both username and password.");
+        }
+     }) ;
+
+     const checkbox =  document.getElementByClass(".checkbox");
+     checkbox.addEventListener("hover",
+        function(){
+            if (checkbox.checked) 
+                alert("You are remembered");}
+     )
+            
+    
+     
+
+    
+
+    
+</script>
+
+</body>
