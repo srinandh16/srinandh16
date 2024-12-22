@@ -1,0 +1,371 @@
+<HTML>
+
+<head>
+    <title>Portfolio</title>
+    <STYLE>
+        
+         header {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f4f1f1;
+            text-align: left;
+
+        }
+        body{
+            background-color: #292828;
+            /*background-image: url(file:///Users/srinandhreddygaddam/Downloads/portfolio.img);*/
+            background-size:cover;
+            
+            
+        }
+
+        .aboutme{
+
+            color:#f4f1f1;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            justify-content:space-between;
+            background:transparent;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px;
+
+        }
+            
+
+        
+
+        .navbar{
+            list-style: none;
+            display:flex;
+            justify-content: space-between;
+            background:transparent;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(238, 235, 235, 0.5);
+
+        }
+
+         .qualifications{
+            display: flex;
+            justify-content:space-between;
+            padding: 10px;
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+
+        }
+
+        #Skills{
+            
+            justify-content:space-between;
+            padding: 10px;
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+
+        }
+        #Education{
+            
+            justify-content:space-between;
+            padding: 10px;
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+            color:#f4f1f1;
+        }
+
+        #Experience{
+            
+            justify-content:space-between;
+            padding: 10px;
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+            color:#f4f1f1
+        }
+
+        #contact{
+            color:#f4f1f1;
+            font-size: 18px;
+
+        }
+            
+
+        .heading{
+            font-size: 24px;
+            font-weight: bold;
+            color: #f4f1f1;
+            text-align: left;
+            padding: 10px;
+            background:transparent;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(238, 235);
+            }
+
+
+        nav ul li 
+        
+        {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(238, 235);
+            cursor: pointer;
+
+            }
+            nav ul li a {
+               text-decoration:none;
+                color: #f4f1f1;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px;
+                border-radius: 10px;
+
+            }
+            nav ul li a:hover {
+                background-color: #95aac1;
+                color:rgb(80, 42, 42);
+                
+            }
+           
+            
+        
+        
+
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+            color: #f9f8f8;
+            text-align: center;
+        }
+
+        h1 span {
+
+            color: maroon;
+            font-style: italic;
+        }
+
+        .about h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: #f7f4f4;
+            text-align: center;
+
+        }
+
+        .E-Commerce ol li {
+           list-style: none;
+           color:white;
+           font-size: 18px;
+
+            
+        }
+
+        #skills ul li span{
+            font-size: 25px;
+            color: maroon;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #skills ul li{
+            font-size:23px;
+            padding: 10px;
+            border-radius: 10px;
+            color:#f4f1f1;
+        }
+
+       .tab-titles{
+        display:flex;
+        margin:20px 0 40px;
+        color:white;
+        font-size: 90px;
+       }
+        .tab-links{
+            margin-right: 50px;
+            font-size:18px;
+            font-weight:500;
+            cursor:pointer;
+            position: relative;
+        }
+         .tab-links:hover{
+           
+            display:flex;
+            justify-content: space-between;
+            background:transparent;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(238, 235, 235, 0.5);
+            transition:0.7s;
+
+            }
+        .tab-links::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: #0d0303;
+            left: 0;
+            bottom: -8px;
+            transition:all;
+            }
+
+        .tab-links.active-link::after{
+            width: 50%;
+        }
+         
+        .tab-contents{
+
+            display:none;
+        }
+        .tab-contents.active-tab{
+            display:block;
+
+        }
+         
+
+
+        
+
+     
+   
+ 
+    </STYLE>
+</head>
+<body>
+    
+    <nav class="navbar">
+
+        <h1  class="heading">Srinandh Reddy's <br>Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Intro</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+             
+        </ul>
+
+    </nav>
+    <h1>Hi! My  name is <span id="name">Srinandh Reddy Gaddam</span> <br>
+                Software Engineer </h1>
+
+    <div class="about">
+        <h1>INTRODUCTION</h1>
+        <p class="aboutme">
+            Experienced Full-Stack Software Engineer with 3+ years of experience in developing advanced web applications and cloud-based solutions. Proficient in microservices, cloud monitoring, and leveraging Python and Java for building scalable systems. demonstrated success in enhancing user engagement by 30% through intuitive interface design. Capable of leveraging technologies such as ASP.NET, Angular, and MongoDB to deliver software solutions. Proficient at collaborating within agile environments to drive project success and improve operational efficiency. 
+        </p>
+    </div>
+            <div id="projects">
+                <h1>Projects</h1>
+                <div class="E-Commerce">
+                 <h1>E-Commerce Platform Development </h1>
+                 <ol>                                                                                                                            
+                    <li>	=> Established a fully functional e-commerce website utilizing HTML, CSS, JavaScript, and Python/Django, with backend deployment on AWS. Integrated Linux-based server management and optimized network security protocols to ensure secure data transactions and improve performance.</li>
+                    <li>	=> Executed user authentication, product listings, and a secure checkout process using the Stripe API, resulting in a 25% reduction in cart abandonment rates. </li>
+                    <li>	=> Constructed a responsive layout that optimized viewing across devices, leading increase in mobile traffic and user satisfaction. </li>
+                    <li>	=> Incorporated PostgreSQL as the backend database to manage user data, product inventory, and order history, enhancing data retrieval speed by 50% through enhanced queries. </li>                                                                   
+                </ol>
+                </div>
+            </div>
+
+            
+        <div class="tab-titles">
+            <p class = "tab-links active-link" onclick = "opentab('Skills')">Skills</p>
+            <p class = "tab-links" onclick = "opentab('Experience')">Experience</p>
+            <p class = "tab-links" onclick = "opentab('Education')">Education</p>
+        </div>
+
+            
+
+                    
+            <div id ="Skills" class="tab-contents active-tab">
+                
+                <ul>
+                    <li><span>Programming Languages: </span> JavaScript, TypeScript, Python, Java C, C++ </li>
+                    <li><span>Cloud Platforms:</span> AWS, Azure, Cloud Monitoring Tools (Grafana).</li>
+                    <li><span>Databases: </span>MongoDB, DynamoDB, SQL, MySQL, NoSQL.</li>
+                    <li><span>Web Development:</span> HTML5, CSS3, Bootstrap, React, Angular, jQuery, Django, Node.js, PHP </li>
+                    <li><span>APIs:</span> REST API, SOAP API, API Development, File-based Integration.</li>
+                    <li><span>Networking: </span>Networking Concepts, Cybersecurity Fundamentals</li>
+                    <li><span>	Methodologies:</span> Agile </li>
+                    <li><span>Tools & IDEs:</span>  Visual Studio Code, Terraform, SSMS, Jira. </li>
+                    <li><span>Version Control:</span> GIT, Bitbucket.</li>
+                    <li><span> & QA:</span> Unit Testing, Integration Testing, Test Plans, Test Scripts</li>
+                    <li><span>	AI Technologies:</span> AI prompting, AI Chatbot Prompting  </li>
+                     
+ 
+                 </ul>
+                 
+                
+            </div>
+            <div id = "Experience" class= "tab-contents">
+                
+                <div class="experience1">
+                    <h2>Software Engineer</h2>
+                    <h2>McKesson</h2>
+                    <h3>August 2023 - October 2024</h3>
+                </div>
+                <div class="experience2">
+                    <h2>Software Engineer</h2>
+                    <h2>NTT DATA</h2>
+                    <h3>July 2019 - November 2021</h3>
+
+                </div>
+                <div class="experience3">
+                    <h2>Software Engineer</h2>
+                    <h2>FactSet</h2>
+                    <h3>April 2019 - June 2019</h3>
+
+                </div>
+
+
+            </div>
+        
+        
+            <div id="Education" class= "tab-contents">
+                
+                <h2>LEWIS UNIVERSITY <br> January 2022 - May 2023<br>Masters in  Computer Science</h2>
+            </div>
+        
+
+
+
+            
+
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+        <p class="details">
+        <p>Email: <a href="mailto:srinandhreddy2@gmail.com ">srinandhreddy2@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1-630-642-3531">1-630-642-3531</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/srinandh-reddy">www.linkedin.com/in/srinandh-reddy</a></p>
+        </p>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }   
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+    
+            
+</script>
+</body>
+</HTML>.      verify the code and give me suggestions to place the experience side by side
