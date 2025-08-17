@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @srinandh16
 - 👀 I’m interested in software engineering and Front-End development
 - 🌱 I’m currently learning Full Stack Web Development
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me srinandhreddy2@gmail.com
+- 💞️ I’m looking to collaborate on Any development
+- 📫 How to reach me srinandhreddy.g@gmail.com
 - 😄 Pronouns: ...he or him
 - ⚡ Fun fact: ...
 
